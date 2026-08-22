@@ -14,7 +14,6 @@
 - 🛠️ Comfortable with **C++, Python, Java, SQL** — now leveling up in **JavaScript, Next.js, MongoDB & PostgreSQL**
 - 🛍️ Built and deployed **Mini Store**, a full-stack e-commerce app (Next.js, React, MongoDB) — [live demo](https://mini-ecommerce-store-nine.vercel.app/)
 - 🔍 Background in **manual QA/testing**, so I care about writing things that actually work, not just things that run
-- ⛓️ Built an **NFT ownership & authentication tool** using Python, cryptography, and SQL
 - 📫 Reach me at **kartikazad421@gmail.com**
 
 ---
@@ -52,7 +51,7 @@
 ### 📌 Pinned Work
 
 - 🛍️ **[Mini Store](https://mini-ecommerce-store-nine.vercel.app/)** — Full-stack e-commerce app with a live product catalog from MongoDB, cart state management, and REST API routes. Built with Next.js, React & deployed on Vercel.
-- ⛓️ **NFT Ownership & Authentication Tool** — Python, Cryptography, SQL
+- 🧪 **QA Test Case Suite** — Designed and executed manual test cases across authentication, dashboard, user management, and billing modules for a B2B SaaS platform, covering smoke, functional, regression, and negative testing scenarios.
 
 ---
 
