@@ -1,0 +1,179 @@
+/* ---------- Tokens ---------- */
+:root {
+  --bg: #faf9f6;
+  --surface: #ffffff;
+  --ink: #16181d;
+  --ink-soft: #565b66;
+  --ink-faint: #8a8f99;
+  --line: #e4e3dd;
+  --accent: #2f6f4f;
+  --accent-ink: #1e4a34;
+  --accent-soft: #e7f0ea;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --display: 'Space Grotesk', ui-sans-serif, sans-serif;
+  --body: 'Inter', ui-sans-serif, sans-serif;
+  --radius: 10px;
+  --max: 1120px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+ul { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3 { font-family: var(--display); margin: 0; line-height: 1.15; }
+
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 999;
+}
+
+/* ---------- Nav ---------- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(250, 249, 246, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-mark {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+.nav-mark .dot { color: var(--accent); }
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+.nav-links a {
+  font-size: 14px;
+  color: var(--ink-soft);
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.15s ease;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 1px;
+  background: var(--accent);
+  transition: width 0.2s ease;
+}
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  font-family: var(--mono);
+  font-size: 13px;
+  border: 1px solid var(--ink);
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.nav-cta:hover { background: var(--ink); color: var(--surface); }
+
+/* ---------- Hero ---------- */
+.hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 88px 32px 96px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--accent-ink);
+  margin: 0 0 18px;
+}
+.eyebrow .prompt { color: var(--ink-faint); margin-right: 6px; }
+.hero h1 {
+  font-size: clamp(2.1rem, 4vw, 3.1rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.accent-text { color: var(--accent); }
+.hero-sub {
+  margin: 26px 0 0;
+  max-width: 46ch;
+  color: var(--ink-soft);
+  font-size: 17px;
+}
+.hero-actions {
+  margin-top: 34px;
+  display: flex;
+  gap: 14px;
+}
+.btn {
+  font-family: var(--body);
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--surface);
+}
+.btn-primary:hover { background: var(--accent-ink); transform: translateY(-1px); }
+.btn-ghost {
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+.btn-ghost:hover { border-color: var(--ink); }
+
+/* Signature element: commit log panel */
+.hero-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(22, 24, 29, 0.04);
+}
+.panel-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  background: #f4f3ef;
+}
+.panel-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--line);
+}
+.panel-title {
+  margin-left: 8px;
+  font-family: var(--mono);
+  font-size: 12px;
