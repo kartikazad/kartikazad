@@ -10,7 +10,7 @@
 
 ### 🚀 About Me
 
-- 🎓 CS Engineering graduate, currently **transitioning into full-stack development**
+- 🎓 Computer Science Engineering graduate, currently **transitioning into full-stack development**
 - 🛠️ Comfortable with **C++, Python, Java, SQL** — now leveling up in **JavaScript, Next.js, MongoDB & PostgreSQL**
 - 🛍️ Built and deployed **Mini Store**, a full-stack e-commerce app (Next.js, React, MongoDB) — [live demo](https://mini-ecommerce-store-nine.vercel.app/)
 - 🔍 Background in **manual QA/testing**, so I care about writing things that actually work, not just things that run
