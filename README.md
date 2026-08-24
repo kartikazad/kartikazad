@@ -59,11 +59,17 @@
 
 <div align="center">
 
-![Kartik's GitHub stats](https://github-readme-stats.vercel.app/api?username=kartikazad&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+<a href="https://github-stats-extended.vercel.app/api?username=kartikazad">
+  <img height="180" src="https://github-stats-extended.vercel.app/api?username=kartikazad&show_icons=true&theme=tokyonight&hide_border=true" />
+</a>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kartikazad&layout=compact&theme=tokyonight&hide_border=true)
+<a href="https://github-stats-extended.vercel.app/api/top-langs/?username=kartikazad">
+  <img height="180" src="https://github-stats-extended.vercel.app/api/top-langs/?username=kartikazad&layout=compact&theme=tokyonight&hide_border=true" />
+</a>
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=kartikazad&theme=tokyonight&hide_border=true)
+<br/>
+
+<img src="https://streak-stats.demolab.com/?user=kartikazad&theme=tokyonight&hide_border=true" />
 
 </div>
 
