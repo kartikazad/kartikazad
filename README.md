@@ -89,17 +89,13 @@ Manual QA testing project covering a B2B SaaS platform.
 
 ---
 
-## 📊 GitHub Stats
+### 📊 GitHub Stats
 
 <div align="center">
 
 <img height="180" src="https://github-stats-extended.vercel.app/api?username=kartikazad&show_icons=true&theme=tokyonight&hide_border=true" />
 
 <img height="180" src="https://github-stats-extended.vercel.app/api/top-langs/?username=kartikazad&layout=compact&theme=tokyonight&hide_border=true" />
-
-<br><br>
-
-<img src="https://streak-stats.demolab.com/?user=kartikazad&theme=tokyonight&hide_border=true" />
 
 </div>
 
