@@ -2,7 +2,7 @@
 
 # Hi, I'm Kartik Azad 👋
 
-### Full Stack Developer · QA Automation
+### Full Stack Developer · QA Automation 
 
 Building practical web applications and automation frameworks with
 **JavaScript, Next.js, React, Python, Selenium & Pytest.**
